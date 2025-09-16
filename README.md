@@ -3,7 +3,8 @@
 
 Digital Vaidya is an innovative Ayurvedic Diet Management System that integrates traditional Ayurvedic principles with modern technology to assist users in managing their dietary needs. The platform features multi-role access for doctors, patients, and administrators, an AI assistant for dietary inquiries, and a comprehensive food database with personalized diet chart management. By connecting users with nearby Ayurvedic centers, Digital Vaidya enhances wellness and provides tailored dietary recommendations.
 
-<img width="1200" height="900" alt="Grey Simple Thank You Greeting Card Lanscape" src="https://github.com/user-attachments/assets/177d0d8b-034a-4084-a11a-9ebfd27779dd" />
+<img width="478" height="213" alt="image" src="https://github.com/user-attachments/assets/e592d75d-8cdc-46ae-9909-8351328338cd" />
+
 
 -----
 
