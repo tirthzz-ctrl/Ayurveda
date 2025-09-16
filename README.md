@@ -1,66 +1,70 @@
-# Project Summary
-The Ayurvedic Diet Management app is a comprehensive platform designed to assist Ayurvedic practitioners in creating, managing, and organizing personalized diet charts for patients. It integrates traditional Ayurvedic dietary principles with modern nutritional metrics, providing an intuitive interface for both doctors and patients. The app features a robust food database, automated diet generation, and patient management tools, ensuring accuracy and ease in dietary planning.
+Digital Vaidya is an innovative Ayurvedic Diet Management System that integrates traditional Ayurvedic principles with modern technology to assist users in managing their dietary needs. The platform features multi-role access for doctors, patients, and administrators, an AI assistant for dietary inquiries, and a comprehensive food database with personalized diet chart management. By connecting users with nearby Ayurvedic centers, Digital Vaidya enhances wellness and provides tailored dietary recommendations.
 
-# Project Module Description
-- **Authentication System**: Handles user login for doctors and patients with role-based access control.
-- **Doctor Dashboard**: Allows doctors to manage patient profiles and generate diet charts.
-- **Patient Dashboard**: Enables patients to view and download their diet charts and track health metrics.
-- **Food Database**: A comprehensive database of over 8,000 food items with Ayurvedic properties.
-- **Diet Generation**: Automated generation of personalized diet plans based on individual health profiles.
-- **Contact Us Page**: Provides users with a way to reach out for support and inquiries.
+*Technology Stack*
 
-# Directory Tree
-```
+1.Frontend: React with TypeScript, Shadcn-ui components
+2.State Management: Zustand
+3.Routing and Authentication: Role-based routing
+4.Styling: Tailwind CSS for responsive design
+5.Build Tool: Vite
+6.AI Integration: Google Gemini API for diet recommendations
+7.Database and Authentication: Supabase for user management and secure authentication
+8.Maps Integration: Google Maps API for locating Ayurvedic centers
+
+*Project Module Description*
+
+* User Authentication: Secure multi-role access for doctors, patients, and administrators using Supabase.
+* AI Assistant: Interactive chat interface for dietary queries and AI-generated diet plans.
+* Food Database: Extensive database detailing Ayurvedic properties of various foods.
+* Diet Chart Management: Users can create, manage, and download personalized diet charts.
+* Responsive UI: Mobile-friendly design enhancing user experience across devices.
+* Multilingual Support: Interface available in multiple languages (English, Hindi, Bengali, Tamil, Telugu, Marathi).
+* Patient Management: Doctors can manage patients, track progress, and generate diet plans.
+* Nearby Ayurvedic Centers: Feature to locate Ayurvedic centers based on user location.
+
+*Directory Tree*
+
+ayurvedic_diet_software/
+├── docs/                        # Documentation files
+│   ├── backend_architecture.md
+│   ├── class_diagram.mermaid
+│   ├── frontend_architecture.md
+│   ├── prd.md
+│   ├── sequence_diagram.mermaid
+│   └── system_design.md
 shadcn-ui/
-├── README.md                  # Project overview and setup instructions
-├── components.json            # Component structure and details
-├── eslint.config.js           # ESLint configuration for code quality
-├── index.html                 # Main HTML file
-├── package.json               # Project dependencies and scripts
-├── postcss.config.js          # PostCSS configuration
+├── README.md                    # Project overview and setup instructions
+├── package.json                 # Project dependencies and scripts
+├── tailwind.config.ts           # Tailwind CSS configuration
+├── vite.config.ts               # Vite configuration for development and build
 ├── public/
-│   ├── favicon.svg            # Favicon for the application
-│   └── robots.txt             # Robots.txt for web crawling
-├── src/
-│   ├── App.css                # Global styles
-│   ├── App.tsx                # Main application component
-│   ├── components/            # Reusable UI components
-│   ├── contexts/              # Context API for state management
-│   ├── hooks/                 # Custom hooks
-│   ├── lib/                   # Utility functions and API integrations
-│   ├── pages/                 # Application pages (Login, Dashboards, etc.)
-│   ├── types/                 # TypeScript type definitions
-│   └── vite-env.d.ts          # Vite environment types
-├── tailwind.config.ts         # Tailwind CSS configuration
-├── template_config.json       # Template configuration
-├── todo.md                    # Implementation plan and tasks
-├── tsconfig.app.json          # TypeScript configuration for app
-├── tsconfig.json              # Base TypeScript configuration
-└── vite.config.ts             # Vite configuration for bundling
-```
+│   ├── favicon.png              # New favicon for Digital Vaidya
+│   ├── logo-login.png           # Updated logo for the login page
+│   └── logo.svg                 # Digital Vaidya logo
+└── src/                         # Source files for the application
+    ├── components/              # UI components
+    ├── hooks/                   # Custom hooks
+    ├── pages/                   # Application pages
+    ├── services/                # External services (e.g., Supabase, Google Maps API)
+    ├── stores/                  # State management stores
+    └── utils/                   # Utility functions
 
-# File Description Inventory
-- **README.md**: Documentation for project setup and usage.
-- **components.json**: Describes the components used in the project.
-- **eslint.config.js**: Configuration file for ESLint to maintain code quality.
-- **index.html**: Entry point of the application.
-- **package.json**: Lists dependencies and scripts for the project.
-- **postcss.config.js**: Configuration for PostCSS.
-- **src/**: Contains the source code of the application including components, pages, and utilities.
-- **tailwind.config.ts**: Configuration file for Tailwind CSS.
-- **template_config.json**: Configuration for template usage in the app.
-- **todo.md**: A list of tasks and implementation plans.
-- **tsconfig.*.json**: TypeScript configuration files for different environments.
-- **vite.config.ts**: Configuration file for Vite.
+*File Description Inventory*
 
-# Technology Stack
-- **Frontend**: React, TypeScript, Tailwind CSS, Shadcn/UI
-- **State Management**: React Context API
-- **Build Tool**: Vite
-- **Linting**: ESLint
-- **Styling**: PostCSS, Tailwind CSS
+docs/: Contains architectural and design documents for the project.
+shadcn-ui/: Main directory for UI components and application logic, including configuration files.
+src/: Source code directory housing all React components, hooks, pages, services, and utilities.
+public/favicon.png: New favicon for the Digital Vaidya application.
+public/logo-login.png: Updated logo for the login page.
+src/pages/ContactUs.tsx: Contact page displaying team members and a contact form.
+src/pages/Index.tsx: Homepage featuring application overview and key features.
+src/pages/Login.tsx: Login and registration page with enhanced functionality and validation.
+src/services/supabaseService.ts: Service layer for interacting with Supabase for authentication and data management.
 
-# Usage
-1. **Install Dependencies**: Run `pnpm install` to install all required packages.
-2. **Build the Project**: Use `pnpm run build` to compile the application.
-3. **Run the Application**: Start the development server with `pnpm run dev`.
+*Usage*
+
+To set up the project, follow these steps:
+
+Install dependencies using the appropriate package manager.
+Build the project using the build command.
+Run the application to start development.
