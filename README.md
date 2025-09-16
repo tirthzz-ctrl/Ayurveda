@@ -1,70 +1,63 @@
+### **Project Overview: Digital Vaidya 🌿**
+
 Digital Vaidya is an innovative Ayurvedic Diet Management System that integrates traditional Ayurvedic principles with modern technology to assist users in managing their dietary needs. The platform features multi-role access for doctors, patients, and administrators, an AI assistant for dietary inquiries, and a comprehensive food database with personalized diet chart management. By connecting users with nearby Ayurvedic centers, Digital Vaidya enhances wellness and provides tailored dietary recommendations.
 
-*Technology Stack*
+-----
 
-1.Frontend: React with TypeScript, Shadcn-ui components
-2.State Management: Zustand
-3.Routing and Authentication: Role-based routing
-4.Styling: Tailwind CSS for responsive design
-5.Build Tool: Vite
-6.AI Integration: Google Gemini API for diet recommendations
-7.Database and Authentication: Supabase for user management and secure authentication
-8.Maps Integration: Google Maps API for locating Ayurvedic centers
+### **Key Features**
 
-*Project Module Description*
+  * 🔐 **User Authentication:** Secure multi-role access for doctors, patients, and administrators using Supabase for robust and secure user management.
+  * 🤖 **AI Assistant:** An interactive chat interface, powered by the Google Gemini API, for instant dietary queries and AI-generated diet plans.
+  * 🍎 **Food Database:** An extensive database detailing the Ayurvedic properties, benefits, and classifications of various food items.
+  * 📅 **Diet Chart Management:** A flexible system allowing users and doctors to create, manage, track, and download personalized diet charts in PDF format.
+  * 📱 **Responsive UI:** A modern, mobile-friendly design built with Shadcn-ui and Tailwind CSS, ensuring a seamless user experience across all devices.
+  * 🌐 **Multilingual Support:** The interface is available in multiple languages (English, Hindi, Bengali, Tamil, Telugu, Marathi) to cater to a diverse user base.
+  * 👩‍⚕️ **Patient Management:** A dedicated module for doctors to manage their patients' profiles, monitor progress, and generate tailored diet plans.
+  * 📍 **Nearby Ayurvedic Centers:** A location-based feature using the Google Maps API to help users find and get directions to Ayurvedic centers near them.
 
-* User Authentication: Secure multi-role access for doctors, patients, and administrators using Supabase.
-* AI Assistant: Interactive chat interface for dietary queries and AI-generated diet plans.
-* Food Database: Extensive database detailing Ayurvedic properties of various foods.
-* Diet Chart Management: Users can create, manage, and download personalized diet charts.
-* Responsive UI: Mobile-friendly design enhancing user experience across devices.
-* Multilingual Support: Interface available in multiple languages (English, Hindi, Bengali, Tamil, Telugu, Marathi).
-* Patient Management: Doctors can manage patients, track progress, and generate diet plans.
-* Nearby Ayurvedic Centers: Feature to locate Ayurvedic centers based on user location.
+-----
 
-*Directory Tree*
+### **Technology Stack**
 
-ayurvedic_diet_software/
-├── docs/                        # Documentation files
-│   ├── backend_architecture.md
-│   ├── class_diagram.mermaid
-│   ├── frontend_architecture.md
-│   ├── prd.md
-│   ├── sequence_diagram.mermaid
-│   └── system_design.md
-shadcn-ui/
-├── README.md                    # Project overview and setup instructions
-├── package.json                 # Project dependencies and scripts
-├── tailwind.config.ts           # Tailwind CSS configuration
-├── vite.config.ts               # Vite configuration for development and build
-├── public/
-│   ├── favicon.png              # New favicon for Digital Vaidya
-│   ├── logo-login.png           # Updated logo for the login page
-│   └── logo.svg                 # Digital Vaidya logo
-└── src/                         # Source files for the application
-    ├── components/              # UI components
-    ├── hooks/                   # Custom hooks
-    ├── pages/                   # Application pages
-    ├── services/                # External services (e.g., Supabase, Google Maps API)
-    ├── stores/                  # State management stores
-    └── utils/                   # Utility functions
+| Category | Technology / Service |
+| :--- | :--- |
+| **Frontend** | `React`, `TypeScript`, `Shadcn-ui` |
+| **State Management** | `Zustand` |
+| **Styling** | `Tailwind CSS` |
+| **Build Tool** | `Vite` |
+| **Backend & Database** | `Supabase` (Authentication & Data Management) |
+| **AI Integration** | `Google Gemini API` |
+| **Maps Integration**| `Google Maps API` |
 
-*File Description Inventory*
+-----
 
-docs/: Contains architectural and design documents for the project.
-shadcn-ui/: Main directory for UI components and application logic, including configuration files.
-src/: Source code directory housing all React components, hooks, pages, services, and utilities.
-public/favicon.png: New favicon for the Digital Vaidya application.
-public/logo-login.png: Updated logo for the login page.
-src/pages/ContactUs.tsx: Contact page displaying team members and a contact form.
-src/pages/Index.tsx: Homepage featuring application overview and key features.
-src/pages/Login.tsx: Login and registration page with enhanced functionality and validation.
-src/services/supabaseService.ts: Service layer for interacting with Supabase for authentication and data management.
+### **Codebase & File Overview**
 
-*Usage*
+  * `docs/`: Contains all high-level architectural and design documents for the project, including system design and diagrams.
+  * `shadcn-ui/`: The main directory for the frontend application, containing all UI components, logic, and configuration files.
+  * `src/`: The core source code directory housing all React components, custom hooks, pages, services, and utility functions.
+  * `public/favicon.png`: The custom favicon for the Digital Vaidya application.
+  * `public/logo-login.png`: An updated, dedicated logo used on the login and registration pages.
+  * `src/pages/ContactUs.tsx`: The "Contact Us" page, which displays team member information and a contact submission form.
+  * `src/pages/Index.tsx`: The application's homepage, featuring a project overview and highlighting its key features.
+  * `src/pages/Login.tsx`: The user login and registration page, complete with enhanced functionality and input validation.
+  * `src/services/supabaseService.ts`: The dedicated service layer for all interactions with the Supabase backend, managing authentication and data operations.
 
-To set up the project, follow these steps:
+-----
 
-Install dependencies using the appropriate package manager.
-Build the project using the build command.
-Run the application to start development.
+### **Setup & Usage Instructions**
+
+To set up and run the project locally, follow these steps:
+
+1.  **Install Dependencies:** Navigate to the project directory and install the required packages using your preferred package manager.
+    ```bash
+    npm install
+    ```
+2.  **Build the Project:** Compile the application and its assets for production.
+    ```bash
+    npm run build
+    ```
+3.  **Run the Application:** Start the local development server to view the application in your browser.
+    ```bash
+    npm run dev
+    ```
